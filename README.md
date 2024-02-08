@@ -61,4 +61,4 @@ How to run UI tests in headless mode:
 ```npm run cypress:ui:run:headless```
 
 How to run API tests:
-```npm run cypress:ui:run:headless```
+```npm run cypress:api:run```
