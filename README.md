@@ -1,4 +1,3 @@
-# testingAssignment
 # Process related questions
 
 1. Identified a problem or inefficiency in a process related to quality or development, and implemented a
@@ -19,7 +18,7 @@ change to improve it
 - Added E2E tests and added them to lower evns to make sure once the PR is merged the E2E flow is not 
 
 
-BDD:
+# BDD
 
 Scenario: User on asset detail page can add asset to cart and see it on cart page
 Given: User is on Homepage
@@ -52,3 +51,14 @@ Then: lands on the accounts page for login/sign up
 And: Enters the correct credentials to login
 Then: Moves back to homepage and can see the item price now
 
+
+## Running tests
+
+How to run UI tests in head mode:
+```npm run cypress:open```
+
+How to run UI tests in headless mode:
+```npm run cypress:ui:run:headless```
+
+How to run API tests:
+```npm run cypress:ui:run:headless```

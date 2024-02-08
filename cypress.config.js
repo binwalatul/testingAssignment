@@ -6,8 +6,7 @@ module.exports = defineConfig({
       
       // implement node event listeners here
     },
-    baseUrl: 'https://academybugs.com/find-bugs',
-    specPattern: 'cypress/e2e/**.spec.js',
+    baseUrl: process.env.BASE_URL,
     watchForFileChanges: false,
     video: true,
     viewportHeight: 1920,

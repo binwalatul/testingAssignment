@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run --headless"
+    "cypress:open": "BASE_URL='https://academybugs.com/find-bugs' cypress open",
+    "cypress:ui:run:headless": "BASE_URL='https://academybugs.com/find-bugs' cypress run --headless -b chrome --config specPattern='cypress/e2e/**.spec.js'",
+    "cypress:api:open": "BASE_URL='https://restful-booker.herokuapp.com' cypress open --config specPattern='cypress/api/**.spec.js'",
+    "cypress:api:run": "BASE_URL='https://restful-booker.herokuapp.com' cypress run --config specPattern='cypress/api/**.spec.js'"
+
   },
   "keywords": [],
   "author": "",
